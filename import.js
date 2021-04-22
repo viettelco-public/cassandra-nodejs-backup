@@ -3,6 +3,7 @@ var Promise = require('bluebird');
 var cassandra = require('cassandra-driver');
 var fs = require('fs');
 var jsonStream = require('JSONStream');
+require('dotenv').config()
 
 var HOST = process.env.HOST || '127.0.0.1';
 var PORT = process.env.PORT || 9042;
